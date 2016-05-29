@@ -1,0 +1,28 @@
+﻿{
+    "version": "1.0.0-*",
+    "authors": [ "Stef Heyenrath" ],
+
+    "buildOptions": {
+        "emitEntryPoint": true
+    },
+
+    "dependencies": {
+        "Microsoft.NETCore.App": {
+            "type": "platform",
+            "version": "1.0.0-rc2-*"
+        },
+        "System.Linq.Dynamic.Core": { "target": "project" }
+    },
+
+    "frameworks": {
+        "netcoreapp1.5": {
+            "imports": [
+                "dotnet5.4",
+                "portable-net451+win8"
+            ],
+            "dependencies": {
+                "CommandLineArgumentsParser": "3.0.1"
+            }
+        }
+    }
+}
